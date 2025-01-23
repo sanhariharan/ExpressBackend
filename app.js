@@ -5,7 +5,7 @@ app.use(express.json()); // express will parse the data from the request body
 const { v4 : uuidv4 } = require('uuid');
 
 
-mongoose.connect("mongodb://localhost:27017/expenses").then(()=>{
+mongoose.connect("mongodb+srv://sanhariharan2023cse:123qwerty@cluster0.zkdc9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
   console.log("Connected to database");
 })
 // we are setting a wrapper to the express app in which format the data should be stored
